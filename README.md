@@ -42,7 +42,7 @@ Full technical report, demo video, and a dataset we published on Kaggle.
 
 ## Team
 
-Built with my ITT569 project team — full credit in the report.
+Built with my ITT569 project team, full credit in the report.
 
 ## License
 
