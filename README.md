@@ -10,7 +10,7 @@ The vault is unlocked via keypad PIN entry, which an ESP32 checks and uses to dr
 
 ## Architecture
 
-Keypad + sensors feed into the ESP32, which handles the servo lock directly. The ESP32 also pushes events over HTTP to a Flask backend — that backend writes to SQLite for history and triggers the Telegram bot for real-time alerts, so notifications go out whether or not anyone's actually watching the dashboard.
+Keypad + sensors feed into the ESP32, which handles the servo lock directly. The ESP32 also pushes events over HTTP to a Flask backend, which writes to SQLite for history and triggers the Telegram bot for real-time alerts so that notifications go out whether or not anyone's actually watching the dashboard.
 
 ## Tech stack
 
