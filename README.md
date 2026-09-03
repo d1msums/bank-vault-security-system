@@ -66,7 +66,7 @@ const char* flaskURL = "http://YOUR_LAPTOP_IP:5000/log";
 
 ---
 
-## 🔌 ESP32 Pin Mapping
+## ESP32 Pin Mapping
 
 | GPIO | Component |
 |------|-----------|
