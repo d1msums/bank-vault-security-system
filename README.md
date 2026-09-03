@@ -36,6 +36,51 @@ Along the way I also ended up doing a fair amount of debugging:
 - Fixed a rendering bug on the Flask dashboard that was breaking the live status view
 - Tracked down some ESP32 → Flask POST requests that were silently failing and dropping events
 
+## How to Run
+
+### 1. Setup database
+```bash
+cd database
+python setup_db.py
+```
+
+### 2. Run Flask dashboard
+```bash
+cd dashboard
+python app.py
+```
+
+Open browser at `http://localhost:5000`
+
+### 3. Upload ESP32 sketch
+- Open `hardware/esp32_main.ino` in Arduino IDE
+- Update WiFi credentials and Flask IP in sketch
+- Select Board: ESP32 Dev Module
+- Upload to ESP32
+
+### 4. Update Flask IP in sketch
+Find this line and update with your laptop IP:
+```cpp
+const char* flaskURL = "http://YOUR_LAPTOP_IP:5000/log";
+```
+
+---
+
+## 🔌 ESP32 Pin Mapping
+
+| GPIO | Component |
+|------|-----------|
+| 2 | Buzzer Signal |
+| 13, 12, 14, 27 | Keypad Rows 1-4 |
+| 26, 25, 33 | Keypad Columns 1-3 |
+| 21 (SDA) | LCD I2C Data |
+| 22 (SCL) | LCD I2C Clock |
+| 32 | Servo Signal |
+| 34 (AO) | MQ-2 Gas Sensor |
+| 35 | PIR Motion Sensor |
+
+---
+
 ## Deliverables
 
 Full technical report, demo video, and a dataset we published on Kaggle.
