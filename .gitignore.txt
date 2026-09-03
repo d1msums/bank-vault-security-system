@@ -1,0 +1,23 @@
+# Database file — don't upload real vault.db
+vault.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Arduino compiled files
+*.elf
+*.hex
+*.bin
+
+# VS Code
+.vscode/
