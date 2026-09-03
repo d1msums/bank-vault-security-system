@@ -30,7 +30,7 @@ This was a group project for ITT569; a few of us split the work. I mainly worked
 - ESP32 firmware for sensor handling and access control logic
 
 Along the way I also ended up doing a fair amount of debugging:
-- Switched the whole setup from dual Arduino + ESP32 to ESP32-only after we kept running into hardware faults — simpler and a lot more reliable
+- Switched the whole setup from dual Arduino + ESP32 to ESP32-only after we kept running into hardware faults, simpler and a lot more reliable
 - Chased down false-trigger issues on the PIR sensor
 - Tuned the MQ-2 analog threshold since it kept false-positiving on gas detection
 - Fixed a rendering bug on the Flask dashboard that was breaking the live status view
